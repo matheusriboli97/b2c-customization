@@ -313,17 +313,18 @@
       #attributeList ul li label {
         display: block;
         text-align: left;
-        float: none;
-      }
-      #attributeList ul li.EmailBox label,
-      #attributeList ul li.Password label,
-      #attributeList ul li.TextBox label {
-        display: none !important;
+        font-weight: 400;
+        font-size: 12px;
+        color: white;
+        margin: 6px 0px 6px 3px;
       }
       #attributeList ul li label[for="country"] {
         float: left;
         display: inline-block !important;
         margin-bottom: 0.5rem;
+      }
+      label#oldNationalNumber_label {
+        margin-top: 0px !important;
       }
       #attributeList ul li label[for="cpiminternal_legalCountry"] {
         float: none;
@@ -516,10 +517,18 @@
         -webkit-appearance: none;
       }
       #attributeList ul li .attrEntry .dropdown_single {
-        height: 45px;
-        border-radius: 0.5rem;
         width: 100%;
-        padding-left: 15px;
+        padding: 6px 15px 6px 15px;
+        font-size: 12px;
+        color: #13263C;
+        border-radius: 18px;
+        font-weight: 300;
+        background-color: #dbecfd;
+        appearance: none;
+        background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+        background-repeat: no-repeat;
+        background-position: right 1rem center;
+        background-size: 1em;
       }
       #attributeList ul li .attrEntry div#cpiminternal_dateOfBirth.date {
         display: table;
@@ -714,8 +723,7 @@
       /* Following are generated styles via gulp. */
       /* inject: css */
       .self_asserted_container .row .panel-default {
-        padding: 10% 10% 20% 10%;
-        /* margin-top: 0; */
+        padding: 10% 10% 15% 10%;
         height: 100%;
         background-color: #13263c;
         border: none;
