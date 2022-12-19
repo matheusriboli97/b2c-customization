@@ -724,6 +724,24 @@
           border: none;
           box-shadow: none;
         }
+        .col-lg-6 {
+          width: 75% !important;
+          max-width: none !important;
+        }
+      }
+      @media only screen and (min-width: 600px) and (max-width: 1000px) {
+        .col-lg-6 {
+          width: 75% !important;
+          max-width: none !important;
+        }
+        .unified_container .row .panel-default {
+          padding: 4% 0% 6% 0% !important;
+          display: flex;
+          justify-content: center;
+        }
+        .unified_container .row .panel-default .panel-body{
+          width: 80% !important;
+        }
       }
       /* endinject */
     </style>
@@ -1376,14 +1394,60 @@
     <div
       id="background_branding_container"
       data-tenant-branding-background-color="true"
-    >
-      <!-- <img
-        data-tenant-branding-background="true"
-        src="https://login.microsoftonline.com/templates/src/backgrounds/1-1.png"
-        alt="Illustration"
-      /> -->
-    </div>
+    ></div>
+
     <div class="container unified_container" role="presentation">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="brand-logo"></div>
+          <div class="panel panel-default">
+            <div class="panel-body">
+              <div id="api" data-name="Unified" role="main">
+      <div class="heading">
+        <h1 role="heading">Sign in</h1>
+      </div>
+      <form id="localAccountForm" action="JavaScript:void(0);" class="localAccount" aria-label="Sign in with your phone number or email">
+        <div class="intro">
+          <h2 aria-level="1">
+            Sign in with your phone number or email
+          </h2>
+        </div>
+        <div class="error pageLevel" aria-hidden="true" role="alert" style="display: none;">
+          <p></p>
+        </div>
+        <div class="entry">
+          <div class="entry-item">
+            <label for="signInNamePhoneEmail">
+              Phone Number or Email
+            </label>
+            <div class="error itemLevel" aria-hidden="true" role="alert" style="display: none;">
+              <p></p>
+            </div>
+            <input type="text" id="signInNamePhoneEmail" name="Phone Number or Email" title="Please enter a valid Phone Number or Email" autofocus="" placeholder="Phone Number or Email" aria-label="Phone Number or Email">
+          </div>
+          <div class="working"></div>
+
+
+          <div class="buttons">
+            <button id="next" type="submit" form="localAccountForm">Sign in</button>
+          </div>
+        </div>
+      </form>
+        <div class="claims-provider-list-text-links-bottom-under-form">
+            <div>
+              <a id="ChangePhoneNumber" class="text-link" href="/devglhomes.onmicrosoft.com/B2C_1_SignInPhoneOrEmail/api/CombinedSigninAndSignup/unified?claimsexchange=ChangePhoneNumber&amp;csrf_token=dXhSV2ZiVEl3eis1L1htRzdOM1R3eGZGNVFMQUpXU3ZydWhrZFBFNTdMSVJuNlVlUDFxMUpoOFo3RE9KL2krclhlU1QyMXZqbUR3Z0RpNUhhODdST0E9PTsyMDIyLTEyLTE5VDE3OjU3OjEwLjQ1OTI5OTlaO0NGMkI1TnRHd1BiZnJ0Y0pLSlllRkE9PTt7Ik9yY2hlc3RyYXRpb25TdGVwIjoxfQ==&amp;tx=StateProperties=eyJUSUQiOiJmMDIxNTIzMi0xMDE2LTQwZjQtYWJkZS0xNjE5MmJlYWU2NjEifQ&amp;p=B2C_1_SignInPhoneOrEmail">Change Phone Number</a>
+            </div>
+        </div>
+  </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- <div class="container unified_container" role="presentation">
       <div class="row">
         <div class="col-lg-6">
           <div class="brand-logo"></div>
@@ -1394,6 +1458,6 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
   </body>
 </html>
