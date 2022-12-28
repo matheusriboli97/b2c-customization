@@ -384,13 +384,12 @@
         border-radius: 0.5rem;
       }
       #attributeList ul li .attrEntry .verificationControlContent .verifyCode {
-        width: inherit;
-        padding: 0 20px;
-        height: 50px;
-        background-color: #296ec6;
+        width: fit-content;
+        background-color: #3378c7;
         color: #fff;
-        margin-right: 5px;
-        border-radius: 0.5rem;
+        border-radius: 20px;
+        padding: 9px 12px 9px 12px;
+        margin-right: 15px;
       }
       #attributeList ul li .attrEntry .verify .verifyButton:hover {
         background-color: #1662c7;
@@ -421,16 +420,12 @@
         border-radius: 0.5rem;
       }
       #attributeList ul li .attrEntry .verificationControlContent .sendNewCode {
-        width: inherit;
-        padding: 0 20px;
-        border: 0;
-        font-size: 1em;
-        height: 50px;
-        right: 0;
-        bottom: -38px;
-        background-color: #296ec6;
+        width: fit-content;
+        background-color: #3378c7;
         color: #fff;
-        border-radius: 0.5rem;
+        border-radius: 20px;
+        padding: 9px 12px 9px 12px;
+        margin-left: 15px;
       }
       #attributeList
         ul
@@ -462,12 +457,7 @@
         .attrEntry
         .verificationControlContent
         .changeClaims {
-        border: none;
-        color: #fff;
-        background-color: #296ec6;
-        width: 60%;
-        height: 50px;
-        border-radius: 0.5rem;
+          display: none !important;
       }
       #attributeList ul li .attrEntry .verify .editButton:hover {
         background-color: #1662c7;
@@ -478,6 +468,7 @@
         .attrEntry
         .verificationControlContent
         .changeClaims:hover {
+          visibility: hidden;
         background-color: #1662c7;
       }
       #attributeList ul li .attrEntry .verify #email_ver_input_label {
@@ -515,6 +506,11 @@
       #attributeList ul li .attrEntry div#cpiminternal_dateOfBirth.date {
         display: table;
         width: 100%;
+      }
+      div#emailVerificationControl_success_message {
+        text-align: left;
+        color: white;
+        display: block !important;
       }
       #attributeList ul li .attrEntry div#cpiminternal_dateOfBirth.date select {
         border-radius: 0.5rem;
@@ -770,7 +766,7 @@
         #api
         #attributeVerification
         .error {
-        color: #f39c9e;
+        color: #F39C9E;
         text-align: left;
         margin-bottom: 5px;
         font-size: 12px;
@@ -780,7 +776,7 @@
         border: none;
         padding: 0;
         background: 0 0;
-        color: #a61e0c;
+        color: #F39C9E;
       }
       .self_asserted_container
         .row
@@ -826,6 +822,7 @@
         li
         #email_success.verificationSuccessText {
         float: left;
+        color: white;
       }
       #attributeVerification #attributeList ul li #email_info {
         float: left;
@@ -966,6 +963,7 @@
       }
       .attrEntry .verificationInfoText {
         margin-bottom: 5px;
+        color: white;
       }
       #attributeList ul li .attrEntry select:hover {
         border-color: #888;
